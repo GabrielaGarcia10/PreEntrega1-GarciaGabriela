@@ -1,0 +1,501 @@
+/* Página Blog */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.mainBlog {
+    font-family: $poppins;
+    align-items: center;
+    text-align-last: center;
+
+    .titleBlog {
+        h2 {
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            color: $color-texto;
+            background-color: $color-primario;
+        }
+
+        p {
+            font-size: 23px;
+            font-weight: 400;
+            text-align: center;
+            padding: 35px;
+            background-color: $color-texto;
+            color: $color-neutro;
+        }
+    }
+}
+
+.gridBlog {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5 2fr 2fr 0.5fr;
+    grid-template-areas:
+        "publicidades estiloArticulo1 estiloArticulo1 masPublicidades"
+        "publicidades estiloArticulo2  estiloArticulo2 masPublicidades"
+        "publicidades estiloArticulo3 estiloArticulo3 masPublicidades"
+    ;
+
+    .estiloArticulo1 {
+        grid-area: estiloArticulo1;
+
+    }
+
+    .estiloArticulo2 {
+        grid-area: estiloArticulo2;
+
+    }
+
+    .estiloArticulo3 {
+        grid-area: estiloArticulo3;
+
+    }
+
+    .publicidades {
+        grid-area: publicidades;
+        background-color: $color-texto;
+        color: $color-neutro;
+        font-size: 30px;
+
+    }
+
+    .masPublicidades {
+        grid-area: masPublicidades;
+        background-color: $color-texto;
+        color: $color-neutro;
+        font-size: 30px;
+    }
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+
+
+    .imagenArticulo {
+        display: flex;
+        justify-self: center;
+        width: 40vw;
+        height: 40vh;
+        margin: 25px;
+    }
+
+    .textoArticulo {
+        font-family: $poppins;
+        margin: 20px;
+        text-align: center;
+        justify-items: center;
+
+        h5 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 200;
+
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration-line: none;
+            color: $color-texto;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-primario;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+/*MEDIAQUERY TABLET*/
+@media(max-width: 760px) {
+    .mainBlog {
+
+        .titleBlog {
+            h2 {
+                font-size: 37px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .gridBlog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "estiloArticulo1"
+            "estiloArticulo2"
+            "estiloArticulo3"
+        ;
+
+        .estiloArticulo1 {
+            grid-area: estiloArticulo1;
+            
+
+        }
+
+        .estiloArticulo2 {
+            grid-area: estiloArticulo2;
+
+        }
+
+        .estiloArticulo3 {
+            grid-area: estiloArticulo3;
+
+        }
+        .publicidades{
+            display: none;
+        }
+        .masPublicidades{
+            display: none;
+        }
+    }
+
+    article {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 45vh;     
+
+
+        .imagenArticulo {
+            display: flex;
+            vertical-align: left;
+            width: 40vw;
+            height: 28vh;           
+
+        }
+
+        .textoArticulo {
+            margin-top: 0px;
+            text-align: center;
+            justify-items: center;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 400;
+                margin: 15px;
+               
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+                margin: 0%;
+
+            }
+
+            a {
+                font-size: 18px;
+                text-decoration-line: none;
+                color: $color-texto;
+                margin: 0%;
+                padding: 0%;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .mainBlog {
+
+        .titleBlog {
+            h2 {
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .gridBlog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "estiloArticulo1"
+            "estiloArticulo2"
+            "estiloArticulo3"
+        ;
+
+        .estiloArticulo1 {
+            grid-area: estiloArticulo1;          
+        }
+
+        .estiloArticulo2 {
+            grid-area: estiloArticulo2;
+        }
+
+        .estiloArticulo3 {
+            grid-area: estiloArticulo3;
+        }
+
+        .publicidades{
+            display: none;
+        }
+        .masPublicidades{
+            display: none;
+        }
+    }
+
+    article {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;        
+        width: 100vw;
+        height: 70vh;     
+
+
+        .imagenArticulo {
+            display: flex;
+            vertical-align: left;
+            width: 90vw;
+            height: 35vh;           
+
+        }
+
+        .textoArticulo {
+            margin-top: 0px;
+            text-align: center;
+            justify-items: center;
+            margin-bottom: 15px;
+
+            h5 {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 15px;
+               
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+               
+
+            }
+
+            a {
+                font-size: 15px;
+                text-decoration-line: none;
+                color: $color-texto;
+                margin: 0%;
+                padding: 0%;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+@media(max-width: 1200px) {
+    .mainBlog {
+
+        .titleBlog {
+            h2 {
+                font-size: 37px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .gridBlog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "estiloArticulo1"
+            "estiloArticulo2"
+            "estiloArticulo3"
+        ;
+
+        .estiloArticulo1 {
+            grid-area: estiloArticulo1;
+            
+
+        }
+
+        .estiloArticulo2 {
+            grid-area: estiloArticulo2;
+
+        }
+
+        .estiloArticulo3 {
+            grid-area: estiloArticulo3;
+
+        }
+        .publicidades{
+            display: none;
+        }
+        .masPublicidades{
+            display: none;
+        }
+    }
+
+    article {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 45vh;     
+
+
+        .imagenArticulo {
+            display: flex;
+            vertical-align: left;
+            width: 40vw;
+            height: 28vh;           
+
+        }
+
+        .textoArticulo {
+            margin-top: 0px;
+            text-align: center;
+            justify-items: center;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 400;
+                margin: 15px;
+               
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+                margin: 0%;
+
+            }
+
+            a {
+                font-size: 18px;
+                text-decoration-line: none;
+                color: $color-texto;
+                margin: 0%;
+                padding: 0%;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+@media(max-width: 630px) {
+    .mainBlog {
+
+        .titleBlog {
+            h2 {
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .gridBlog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "estiloArticulo1"
+            "estiloArticulo2"
+            "estiloArticulo3"
+        ;
+
+        .estiloArticulo1 {
+            grid-area: estiloArticulo1;          
+        }
+
+        .estiloArticulo2 {
+            grid-area: estiloArticulo2;
+        }
+
+        .estiloArticulo3 {
+            grid-area: estiloArticulo3;
+        }
+
+        .publicidades{
+            display: none;
+        }
+        .masPublicidades{
+            display: none;
+        }
+    }
+
+    article {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;        
+        width: 100vw;
+        height: 70vh;     
+
+
+        .imagenArticulo {
+            display: flex;
+            vertical-align: left;
+            width: 90vw;
+            height: 35vh;           
+
+        }
+
+        .textoArticulo {
+            margin-top: 0px;
+            text-align: center;
+            justify-items: center;
+            margin-bottom: 15px;
+
+            h5 {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 15px;
+               
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+               
+
+            }
+
+            a {
+                font-size: 15px;
+                text-decoration-line: none;
+                color: $color-texto;
+                margin: 0%;
+                padding: 0%;
+                font-weight: 600;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link del css de bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Fuente externa -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <!-- Link estilos propios -->
+        <link rel="shortcut icon" href="./multimedia/PowerDash-favicon.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Powerdash</title>
+    </head>
+    
+    <body>
+    
+        <header class="header">
+            <nav class="navegador">
+                <div class="divPadre">
+                    <div class="divHijo"> 
+                        <a href="./index.html"><img class="logoHeader" src="./multimedia/PowerDash-logo.png"
+                                alt="Powerdash logo"></a>
+                    </div>
+                    <div class="divHijo">
+                        <p class="fraseHeader"> Estrategias que dan resultado</p>
+                    </div>
+                </div>
+                <ul>
+                    <li> <a href="./index.html" >Inicio</a></li>
+                    <li> <a href="./servicios.html">Servicios</a></li>
+                    <li> <a href="./contacto.html" class="menuActivo">Contacto</a></li>
+                    <li> <a href="./blog.html" >Blog</a></li>
+                    <li> <a href="./FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- MAIN CONTACTO -->
+    <main class="mainContacto">
+
+        <h2 class="titleContacto"> CONTACTO </h2>
+        <p class="textContacto">Dejanos tus datos y tu consulta, nos comunicaremos con vos a la brevedad.</p>
+        <section class="seccionFormulario">
+        <form action="#" method="GET">
+
+            <fieldset class="cuboDatosPersonales">
+                <legend class="tituloCubo"> Datos personales </legend>
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="text" name="Apellido" placeholder="Apellido">
+                <input type="text" name="e-mail" placeholder="Correo electrónico">
+                <input type="text" name="Teléfono" placeholder="Teléfono">
+                <textarea name="Mensaje" id="estiloCajaConsulta" cols="51" rows="13"
+                    placeholder="Escribí tu consulta"></textarea>
+
+            </fieldset>
+
+            <fieldset class="cuboTipoEmpresa">
+                <legend class="tituloCubo"> Tipo de empresa </legend>
+                <input class="inline" type="radio" name="Tipo de empresa" value="Emprendimiento">
+                <div class="inline">Emprendimiento (1 a 5 personas)</div>
+                <br>
+                <input class="inline" type="radio" name="Tipo de empresa" value="De 5 a 20 pers">
+                <div class="inline">Pequeña empresa (de 5 a 20 empleados)</div>
+                <br>
+                <input class="inline" type="radio" name="Tipo de empresa" value="De 20 a 100 pers">
+                <div class="inline">Mediana empresa (de 20 a 100 empleados)</div>
+                <br>
+                <input class="inline" type="radio" name="Tipo de empresa" value="Más de 100 pers">
+                <div class="inline">Empresa de más de 100 empleados</div>
+                <br>
+            </fieldset>
+
+            <fieldset class="cuboComoContactarme">
+                <legend class="tituloCubo"> Cómo contactarme </legend>
+                <select  name="Cómo contactarnos">
+                    <option value="Escribir e-mail">Quiero que me escriban</option>
+                    <option value="LLamar">Quiero que me llamen</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="cuboTerminosCondiciones">
+                <legend class="tituloCubo" >Acepto terminos y condiciones</legend>
+                <input type="checkbox" name="Acepta" value="1">
+                <a href="./terminos.html" target="_blank">Leer términos y condiciones</a>
+            </fieldset>
+
+            <input class="botonFormulario" type="submit">
+            <br>
+            <input class="botonFormulario" type="reset" value="Limpiar formulario">
+            </fieldset>
+
+        </form>
+    </section>
+    <section>
+        <div class="enLinea">
+            <p>¿Dónde estamos?</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.88765780236!2d-58.498452865864955!3d-34.59222647156427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb616322a12c9%3A0xa1fa07ef71e7079!2sAgronom%C3%ADa%2C%20CABA!5e0!3m2!1ses!2sar!4v1638584708676!5m2!1ses!2sar"
+                width="600" height="450" style="border: 100px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    </main>
+
+        <!-- PIE DE PÁGINA -->
+
+        <footer class="footer">
+            <div class="linksFooter">
+                <a href="./contacto.html">Escribinos tus consultas</a>
+                <a href="./blog.html">Conocé nuestras novedades</a>
+            </div>
+            <div class="redesFooter">
+    
+                <div><p>BUSCANOS EN NUESTRAS REDES SOCIALES</p></div>
+    
+                <div class="redesFooterLinks">
+                    <a href="https://www.instagram.com/powerdash.ar/" target="_blank" class="col-md-3">Instagram</a>
+                    <a href="https://www.linkedin.com/in/powerdash-consultora-122441210/" target="_blank">Linkedin</a>
+                </div>
+            </div>
+            <div class="imagenFooter">
+                <img src="./multimedia/Powerdash-footer.png" alt="Footer Powerdash">
+            </div>
+        </footer>
+</body>

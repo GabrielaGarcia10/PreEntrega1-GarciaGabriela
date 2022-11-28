@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link del css de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fuente externa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!-- Libreria de animacion - ANIMATE CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />   
+    <!-- Link estilos propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./multimedia/PowerDash-favicon.png">
+    <title>Powerdash</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navegador">
+            <div class="divPadre">
+                <div class="divHijo">
+                    <a href="./index.html"><img class="logoHeader" src="./multimedia/PowerDash-logo.png"
+                            alt="Powerdash logo"></a>
+                </div>
+                <div class="divHijo">
+                    <p class="fraseHeader"> Estrategias que dan resultado</p>
+                </div>
+            </div>
+            <ul>
+                <li> <a href="./index.html" class="menuActivo">Inicio</a></li>
+                <li> <a href="./servicios.html">Servicios</a></li>
+                <li> <a href="./contacto.html">Contacto</a></li>
+                <li> <a href="./blog.html">Blog</a></li>
+                <li> <a href="./FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainInicio">
+        <div class="estiloInicio">
+            <h1 class="animate__animated animate__slideInUp">POWERDASH</h1>
+            <h2 class="textoInicio animate__animated animate__slideInUp">Somos una consultora que ofrece servicios integrales para
+                la industria.
+                Abarcamos desde
+                consultorías en procesos industriales, manejo y visualización de datos, hasta el diseño, creación y
+                mantenimiento
+                de redes sociales.</h2>
+        </div>
+
+        <section class="seccionAlcance">
+            <div>
+                <h2>NUESTRO ALCANCE</h2>
+            </div>
+            <div class="gridAlcance">
+                <div class="procesos">
+                    <h3>PROCESOS</h3>
+                    <p>En Powerdash realizamos consultorías y asesoramiento a empresas de ingeniería química, petrolera,
+                        plástica, farmacéutica. También trabajamos con empresas constructoras y del rubro gastronómico.
+                        Nuestro objetivo es ayudar a las empresas a mejorar sus procesos de producción y optimizar al
+                        máximo
+                        sus recursos. Realizamos asistencias técnicas para solucionar los problemas que afectan a las
+                        PyMEs
+                        y emprendimientos.</p>
+                </div>
+                <div class="layout">
+                    <h3>LAY-OUT</h3>
+                    <p>Nuestro equipo de profesionales te ayuda a diseñar tu planta industrial, para que cumpla con los
+                        estándares de calidad y seguridad. La organización del espacio te permitirá ordenar
+                        estrategicamente
+                        el equipamiento, la distribución de tu personal y el flujo de materias primas, para minimizar el
+                        consumo de mano de obra y garantizar la correcta exposición de cada producto. El objetivo es
+                        ayudarte a optimizar el espacio y los recursos.</p>
+                </div>
+                <div class="calidad">
+                    <h3>CALIDAD</h3>
+                    <p>Sistematizamos la documentación de tu empresa para que cumpla con los estándares de calidad. En
+                        Powerdash podemos crear tu manual de calidad, manuales de procesos y procedimientos. Diseñamos
+                        tu
+                        sistema de gestión de la calidad bajo la normativa vigente y que mejor se adapte a tu negocio.
+                    </p>
+                </div>
+                <div class="productos">
+                    <h3>PRODUCTOS</h3>
+                    <p>Realizamos análisis integrales de competencias de diversos productos comerciales, para ayudarte a
+                        evaluar el posicionamiento de tu marca en el mercado global.</p>
+                </div>
+                <div class="datos">
+                    <h3>DATOS</h3>
+                    <p>En Powerdash creamos tableros para la visualización de los datos de tu negocio, relacionando tus
+                        objetivos con las métricas de crecimiento de tu empresa, a partir de los indicadores de
+                        crecimiento
+                        de tu rubro. Recopilamos y ordenamos tus datos para que puedas tomar mejores decisiones de
+                        negocios.
+                    </p>
+                </div>
+                <div class="sitiosWeb">
+                    <h3>SITIO WEB</h3>
+                    <P> Diseñamos tu página web para impulsar tu negocio local a mayores dimensiones. Te ayudamos con la
+                        gestión y diseño de tu web, para que tu información se mantenga siempre actualizada. Además
+                        creamos contenido para promocionar tu negocio en redes sociales.</P>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Carrusel con BOOTSTRAP -->
+        <section class="seccionTestimonios">
+            <h2>
+                TESTIMONIOS
+            </h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./multimedia/lauraPowerdash.jpg" class="d-block w-100 imagenCarousel" alt="...">
+                        <div class="carousel-caption ">
+                            <h5>Laura Warkok y Brenda Clementino</h5>
+                            <p>Somos dos socias productoras de la marca de ropa "Petirrojo Clothes", nos contactamos con
+                                Powerdash
+                                cuando decidimos ampliar nuestra marca. Nos ayudaron muchísimo en la organización de los
+                                talleres y
+                                en el estudio de mercado, implementamos un sistema de control de calidad en el sector de
+                                confección,
+                                y aprendimos nuevas técnicas de marketing. Excelente experiencia, nos sirvió muchisimo
+                                para hacer
+                                crecer nuestra marca.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/maximoBakjirdianPowerdash.jpg" class="d-block w-100 imagenCarousel"
+                            alt="...">
+                        <div class="carousel-caption ">
+                            <h5>Lic. Máximo Bakjirdian</h5>
+                            <p>Soy gerente de la planta de Pilar en la empresa Francioni e Hijos S.A.. Me contacté con
+                                Powerdash
+                                para solicitarles asesoramiento en la distribucion de los productos congelados. Se
+                                generó una red de
+                                distribución local y regional que abastece a todo el país y parte de Brasil y Paraguay
+                                con nuestros
+                                productos. Son dos profesionales jóvenes, con mucha visión y pasión por lo que hacen,
+                                estoy más que
+                                conforme con esta experiencia.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/agrónomoPowerdash.jpg" class="d-block w-100 imagenCarousel" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Ing. Esteban Menendez Blanco</h5>
+                            <p>Soy ingeniero agrónomo, trabajo como asesor independiente en análisis de suelos, en
+                                Buenos Aires, Argentina. Les solicité ayuda a Powerdash para promocionar mis servicios y
+                                ampliar los análisis químicos que ofrezco dentro de mis asesorías. Hoy, casi 8 meses
+                                después, pude montar mi propio laboratorio de análisis de aguas, efluentes y suelos,
+                                dentro del sistema de calidad propuesto por el
+                                INTA y en cumplimiento con las normas de seguridad vigentes. Me encuentro muy satisfecho
+                                con el desempeño del equipo de Powerdash, conocen la industria productiva y adaptan
+                                estrategias de
+                                crecimiento con visión de mercado. </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <!-- PIE DE PAGINA -->
+
+    <footer class="footer">
+        <div class="linksFooter">
+            <a href="./contacto.html">Escribinos tus consultas</a>
+            <a href="./blog.html">Conocé nuestras novedades</a>
+        </div>
+        <div class="redesFooter">
+
+            <div>
+                <p>BUSCANOS EN NUESTRAS REDES SOCIALES</p>
+            </div>
+
+            <div class="redesFooterLinks">
+                <a href="https://www.instagram.com/powerdash.ar/" target="_blank" class="col-md-3">Instagram</a>
+                <a href="https://www.linkedin.com/in/powerdash-consultora-122441210/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+        <div class="imagenFooter">
+            <img src="./multimedia/Powerdash-footer.png" alt="Footer Powerdash">
+        </div>
+    </footer>
+
+    <!-- js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

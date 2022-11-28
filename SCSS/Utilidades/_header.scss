@@ -1,0 +1,138 @@
+//*Header*//
+
+.header {
+    position: sticky;
+    top: 0%;
+    background-color: $color-neutro;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    font-family: $poppins;
+
+    .divPadre {
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+
+        .divHijo {
+            display: inline-block;
+            font-size: 20px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 10px;
+
+        li {
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            text-indent: 5px;
+            list-style: none;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                text-decoration-line: none;
+                color: $color-texto;
+
+                &:hover {
+                    color: $color-primario;
+                }
+            }
+        }
+
+    }
+}
+
+.logoHeader {
+    inline-size: 50px;
+}
+
+.fraseHeader {
+    font-family: $poppins;
+    font-weight: 600;
+    color: $color-texto;
+}
+
+.menuActivo {
+    font-weight: 600;
+}
+
+/* media query tablet*/
+
+@media(max-width:760px) {
+    .navegador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 400;
+        
+
+        .divPadre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 10vh;
+
+            .divHijo{
+            margin-bottom: 2px;
+
+            }
+            .logoHeader {
+                inline-size: 50px;
+            }
+            .fraseHeader{
+                font-size: 20px;
+            }
+        }
+        ul{
+            li{
+            font-size: 22px;
+            margin: 0px;
+            padding: 0px;
+            }
+        }
+
+    }
+}
+/*mediaquery telefono*/
+@media(max-width: 480px){
+    .navegador {        
+        font-weight: 200;
+
+        .divPadre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+
+            .divHijo{                 
+            font-size: 15px;
+            font-weight: 200;
+            }
+
+            .logoHeader {
+                inline-size: 35px;
+            }
+            .fraseHeader{
+                font-size: 15px;
+            }
+        }
+        ul{
+            li{
+            font-size: 18px;
+            margin: 0px;
+            padding: 0px;
+            }
+        }
+
+    }
+}

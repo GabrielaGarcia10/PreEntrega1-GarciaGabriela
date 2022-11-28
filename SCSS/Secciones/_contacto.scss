@@ -1,0 +1,184 @@
+/* estilo de los formularios */
+
+.mainContacto {
+    font-family: $poppins;
+}
+
+.titleContacto {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: $color-texto;
+    background-color: $color-primario;
+}
+
+.textContacto {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    padding: 35px;
+    background-color: $color-texto;
+    color: $color-neutro;
+}
+
+.tituloCubo {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.seccionFormulario {
+    display: flex;
+
+}
+
+.cuboDatosPersonales {
+    width: 600px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 50px;
+
+    align-items: center;
+
+}
+
+
+.cuboTipoEmpresa {
+    width: 600px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 50px;
+    align-items: center;
+
+}
+
+.inline {
+    display: inline;
+}
+
+.cuboComoContactarme {
+    width: 600px;
+    height: 70px;
+    margin-left: 55px;
+    margin-bottom: 20px
+}
+
+.cuboTerminosCondiciones {
+    width: 600px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px
+}
+
+.botonFormulario {
+    width: 600px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px
+}
+
+.enLinea {
+    width: 600px;
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+
+@media(max-width:760px) {
+
+    .titleContacto {
+        font-size: 37px;
+        font-weight: 600;
+
+    }
+
+    .textContacto {
+        font-size: 20px;
+        font-weight: 400;
+
+        padding: 25px;
+    }
+
+    .tituloCubo {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+/*mediaquerys tablet */
+@media(max-width:760px) {
+    .titleContacto {
+        font-size: 37px;
+        font-weight: 600;
+
+    }
+
+    .textContacto {
+        font-size: 20px;
+        font-weight: 400;
+
+        padding: 25px;
+    }
+
+    .tituloCubo {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+ /*mediaquerys telefono*/
+@media(max-width:480px) {
+    .titleContacto {
+        font-size: 28px;
+        font-weight: 600;
+
+    }
+
+    .textContacto {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 25px;
+    }
+
+    .tituloCubo {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .cuboTipoEmpresa {
+        width: 400px;
+        height: 200px;
+        margin-top: 150px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .botonFormulario {
+        width: 80vw;
+    }
+
+    .enLinea {
+        width: 600px;
+        height: 450px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+}
+}
